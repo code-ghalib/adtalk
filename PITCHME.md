@@ -11,11 +11,12 @@ An informed and possibly incorrect recap of Conal's ICFP 2018 talk.
     - More exact, efficient, (and often) numerically stable than finite-difference calulation
 - Usually based on computation DAG and propagation of error terms via stateful constructs - difficult to parallelize  
 ---
+### Broad Idea
+- At a higher level of abstraction, a derivative is a **linear map** rather than just a number/vector/matrix/tensor.
+- Languages that can represent these concepts in a first-class way are suited for this interpretation of AD
+---
 ### Warning
 Abuse of syntax ahead!
----
-### Ideas
-- A higher level of abstraction, a derivative is a **linear map** (e.g. number/vector/matrix/tensor)
 ---
 - Derivatives of ***linear*** functions are the functions themselves: For all linear functions `f`, `D f a = f`  
 ```OCaml
