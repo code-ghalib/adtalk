@@ -16,12 +16,13 @@ Abuse of syntax ahead!
 ---
 ### Ideas
 - A higher level of abstraction, a derivative is a **linear map** (e.g. number/vector/matrix/tensor)
-- Derivatives of linear functions are the functions themselves: For all linear functions ```f```, ```D f a = f```  
+- Derivatives of linear functions are the functions themselves: For all linear functions `f`, `D f a = f`  
 ```OCaml
 val f : 'a -> 'b
 val D : ('a -> 'b) -> 'a -> ('a -> 'b)
 ```
 - Derivatives composition (chain rule): `D (g f) a = (D g (f a)) (D f a)`
+---
 ```OCaml
 val f : 'a -> 'b
 val g : 'b -> 'c
@@ -29,6 +30,7 @@ typeof{D f a} : 'a -> 'b
 typeof{(D g (f a))} : 'b -> 'c
 ```
 - Doesn't really compose sequentially: `D (g f)` can't be expressed in terms of just `D g` and `D f`.
+---
 - Define one that does compose sequentially:
 ```OCaml
 val f : 'a -> 'b
