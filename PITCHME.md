@@ -29,8 +29,8 @@ val g : 'b -> 'c
 typeof{D f a} : 'a -> 'b
 typeof{(D g (f a))} : 'b -> 'c
 ```
----
 - Doesn't really compose sequentially: `D (g f)` can't be expressed in terms of just `D g` and `D f`.
+---
 - Define one that does compose sequentially:
 ```OCaml
 val f : 'a -> 'b
