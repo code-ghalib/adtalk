@@ -16,7 +16,7 @@ Abuse of syntax ahead!
 ---
 ### Ideas
 - A higher level of abstraction, a derivative is a **linear map** (e.g. number/vector/matrix/tensor)
-- Derivatives of linear functions are the functions themselves: For all linear functions `f`, `D f a = f`  
+- Derivatives of linear functions are the functions themselves: For all linear functions ```f```, ```D f a = f```  
 ```OCaml
 val f : 'a -> 'b
 val D : ('a -> 'b) -> 'a -> ('a -> 'b)
