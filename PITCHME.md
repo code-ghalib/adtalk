@@ -18,7 +18,7 @@ An informed and possibly incorrect recap of Conal's ICFP 2018 talk.
 ### Warning
 Abuse of syntax ahead!
 ---
-- Derivatives of ***linear*** functions are the functions themselves: For all linear functions `f`, `D f a = f`  
+- Derivatives of ***linear*** functions are *identi*cal to the functions themselves: For all linear functions `f`, `D f a = f`  
 ```OCaml
 val f : 'a -> 'b
 val D : ('a -> 'b) -> 'a -> ('a -> 'b)
