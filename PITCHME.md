@@ -45,6 +45,11 @@ D' (g f) a =
   (g (f a), D (g f) a)
   (* or by chain rule *)
   (g (f a), (D g (f a)) (D f a))
+```
+---
+```
+  (* continued... *)
+  (g (f a), (D g (f a)) (D f a))
   (* refactor to share [f a] *)
   let b = f a in (g b, (D g b) (D f a))
   (* refactor to show composition *)
