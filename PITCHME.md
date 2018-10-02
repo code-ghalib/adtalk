@@ -1,6 +1,7 @@
 ### The Simple Essence of Automatic Differentiation
 Conal Elliott (March, 2018)
-[https://arxiv.org/abs/1804.00746](https://arxiv.org/abs/1804.00746)
+[https://arxiv.org/abs/1804.00746](https://arxiv.org/abs/1804.00746)  
+
 An informed and possibly incorrect recap of Conal's ICFP 2018 talk.
 ---
 ### Background
