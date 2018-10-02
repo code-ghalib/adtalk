@@ -57,7 +57,6 @@ D' (g f) a =
   let (c, g') = D' g b in
   (c,g' f')
 ```
----
 - Once you have an identity and a composition, this forms a category
 ---
 ### Contributions
