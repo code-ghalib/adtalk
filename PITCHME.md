@@ -63,6 +63,7 @@ D' (g f) a =
 - Develops an approach to AD independent of data structure representation of computation graph (Wegner lists or tapes etc.)
 - Builds on previous work - "Compiling to categories", any simply-typed lambda calculus can be compiled down to a category (interpreted as a category).
 - Compiler plugin compiles down to categories and the 'arrows' can be interpreted as one chooses, to extract an efficient representation for computation of derivatives.
+---
 - Adds 'parallel composition' `<|>` as opposed to sequential and a product type (pairs), to form a 'closed cartesian category' abstraction and uses compiler plugin to compile (via categories) to efficient computation graphs (matrices - also closed cartesian categories apparently)
 - Unifies reverse-mode AD as a special case (left-association of sequential composition equivalent to continuation-passing style), providing potential for parallelizable implementations
 - Bridges symbolic differentiation and automatic differentiation as being the same thing in a functional language
